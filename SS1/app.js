@@ -3,6 +3,7 @@ let arr2 = [1,3,5,7]
 
 
 // Cau A
+
 // for(let item of arr1){
 //     if(item > 3){
 //         console.log(item)
@@ -15,23 +16,31 @@ let arr2 = [1,3,5,7]
 // }
 
 // Cau B
-// arr = []
+
+// Cach 1
+
+// var arr = []
 // for(let item of arr1)
 //     arr.push(item)
 // for(let item of arr2)
 //     arr.push(item)
 
-// console.log(arr)
+//  Cach 2
+
+var arr = arr1.concat(arr2)
+
+
+console.log(arr)
 
 // Cau C
 
-arr = []
+var arr = []
 for(let item of arr1)
     arr.push(item)
 for(let item of arr2)
     arr.push(item)
 
-
+// BUBBLE SORT
 // do{
 //     swapped = false
 //     for(let i = 0; i < arr.length - 1; i++){
