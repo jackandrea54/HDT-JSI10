@@ -32,18 +32,28 @@ for(let item of arr2)
     arr.push(item)
 
 
-do{
-    swapped = false
-    for(let i = 0; i < arr.length - 1; i++){
-        if (arr[i] > arr[i+1]){
-            swapped = true
+// do{
+//     swapped = false
+//     for(let i = 0; i < arr.length - 1; i++){
+//         if (arr[i] > arr[i+1]){
+//             swapped = true
+//             var temp = arr[i]
+//             arr[i] = arr[i+1]
+//             arr[i+1] = temp
+//         }
+//     }
+// }
+// while (swapped)
+
+for(let i = 0; i < arr.length; i++){
+    for(let j = i+1; j < arr.length; j++){
+        if(arr[i] > arr[j]){
             var temp = arr[i]
             arr[i] = arr[i+1]
             arr[i+1] = temp
         }
     }
 }
-while (swapped)
 
 
 
